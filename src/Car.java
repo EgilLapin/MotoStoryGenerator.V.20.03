@@ -30,8 +30,6 @@ public class Car {
         }
     }
 
-
-
     // and methods getFuelLevel,
     private int getFuelLevel(){
         System.out.println("Fuel level now at " + this.amountOfFuel);
@@ -47,11 +45,13 @@ public class Car {
             System.out.println("Added " + addedFuel+ "L of Fuel...");
         }
     }
+
     // adding extra method as a bonus for safety :)
     private void callPolice(){
         System.out.println("Sensing tampering with the car, calling the police...");
     }
-    // to return the current fuel level, and addFuel, to tank up. Sample usage:
+
+    //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
         Car myHybrid = new Car(30);
         System.out.println(myHybrid.getFuelLevel()); //Print fuel remaining
