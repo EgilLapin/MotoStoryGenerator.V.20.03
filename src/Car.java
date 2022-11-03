@@ -19,7 +19,7 @@ public class Car {
     // Supply a method drive that simulates driving the car for a certain distance,
     private void drive(double distance) {
         if (distance<0) {
-            System.out.println("Stop messing with the Odometer... Driving " + distance + "KM`s is kind of not possible");
+            System.out.println("Stop messing with the Odometer... Driving " + distance + " KM`s is kind of not possible");
             callPolice();
         } else {
             double neededFuel = distance * fuelEfficiency / 100;
