@@ -61,7 +61,7 @@ public class Car {
         Car myHybrid = new Car(6.66);
         myHybrid.getFuelLevel(); //Print fuel remaining
         myHybrid.addFuel(46.66); // Tank 46.66 litres
-        myHybrid.drive(666); // Drive 66 km
+        myHybrid.drive(666); // Drive 666 km
         myHybrid.getFuelLevel(); //Print fuel remaining
 
         myHybrid.addFuel(20); // Tank extra 20 litres
