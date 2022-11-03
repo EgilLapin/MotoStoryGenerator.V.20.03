@@ -12,7 +12,7 @@ public class Car {
     // The efficiency is specified in the constructor,
     public Car(double fuelEfficiency) {
         this.fuelEfficiency = fuelEfficiency;
-        // and the initial fuel level is 0.
+        // and the initial fuel level is 1.
         this.amountOfFuel = 1;
     }
 
@@ -61,16 +61,16 @@ public class Car {
         Car myHybrid = new Car(6.66);
         myHybrid.getFuelLevel(); //Print fuel remaining
         myHybrid.addFuel(46.66); // Tank 46.66 litres
-        myHybrid.drive(666); // Drive 100 km
+        myHybrid.drive(666); // Drive 66 km
         myHybrid.getFuelLevel(); //Print fuel remaining
 
         myHybrid.addFuel(20); // Tank extra 20 litres
-        myHybrid.drive(222); // Try Drive 100 km again
+        myHybrid.drive(222); // Try Drive 222 km
         myHybrid.getFuelLevel(); //Print fuel remaining
 
         //Checking for negative values :)
-        myHybrid.drive(-666); // Drive -100 km
-        myHybrid.addFuel(-13); // Tank -20 litres
+        myHybrid.drive(-666); // Drive -666 km
+        myHybrid.addFuel(-13); // Tank -13 litres
         myHybrid.getFuelLevel(); //Print fuel remaining
     }
 }
