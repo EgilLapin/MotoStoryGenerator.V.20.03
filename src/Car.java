@@ -1,24 +1,28 @@
+import java.math.BigDecimal;
+import java.math.MathContext;
+import java.math.RoundingMode;
+
 // Implement a class Car with the following properties.
 public class Car {
 
     // A car has a certain fuel efficiency (measured in km/litre)
-    private int fuelEfficiency;
+    private double fuelEfficiency;
     // and a certain amount of fuel in the fuel tank.
-    private int amountOfFuel;
+    private double amountOfFuel;
     // The efficiency is specified in the constructor,
-    public Car(int fuelEfficiency) {
+    public Car(double fuelEfficiency) {
         this.fuelEfficiency = fuelEfficiency;
         // and the initial fuel level is 0.
-        this.amountOfFuel = 0;
+        this.amountOfFuel = 1;
     }
 
     // Supply a method drive that simulates driving the car for a certain distance,
-    private void drive(int distance) {
+    private void drive(double distance) {
         if (distance<0) {
-            System.out.println("Stop messing with the Odometer...");
+            System.out.println("Stop messing with the Odometer... Driving KM`s " + distance + " is kind of not possible");
             callPolice();
         } else {
-            int neededFuel = distance * fuelEfficiency / 100;
+            double neededFuel = distance * fuelEfficiency / 100;
             if (neededFuel > amountOfFuel) {
                 System.out.println("Not Enough fuel to cover the distance, need "
                         + neededFuel + "L of Fuel to cover the distance," +
@@ -31,14 +35,15 @@ public class Car {
     }
 
     // and methods getFuelLevel,
-    private int getFuelLevel(){
-        System.out.println("Fuel level now at " + this.amountOfFuel);
-        return this.amountOfFuel;
+    private void getFuelLevel(){
+        System.out.println("Fuel level now around: " + new BigDecimal
+                (this.amountOfFuel, new MathContext(1, RoundingMode.UP))
+        );
     }
 
-    private void addFuel(int addedFuel){
+    private void addFuel(double addedFuel){
         if (addedFuel < 0 ) {
-            System.out.println("Please dont steal Fuel...");
+            System.out.println("Please dont steal " + Math.abs(addedFuel) + "L Fuel...");
             callPolice();
         } else {
             this.amountOfFuel = this.amountOfFuel+addedFuel;
@@ -53,18 +58,19 @@ public class Car {
 
     //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
-        Car myHybrid = new Car(30);
-        System.out.println(myHybrid.getFuelLevel()); //Print fuel remaining
-        myHybrid.addFuel(20); // Tank 20 litres
-        myHybrid.drive(100); // Drive 100 km
+        Car myHybrid = new Car(6.66);
+        myHybrid.getFuelLevel(); //Print fuel remaining
+        myHybrid.addFuel(46.66); // Tank 46.66 litres
+        myHybrid.drive(666); // Drive 100 km
+        myHybrid.getFuelLevel(); //Print fuel remaining
 
         myHybrid.addFuel(20); // Tank extra 20 litres
-        myHybrid.drive(100); // Try Drive 100 km again
-        System.out.println(myHybrid.getFuelLevel()); //Print fuel remaining
+        myHybrid.drive(222); // Try Drive 100 km again
+        myHybrid.getFuelLevel(); //Print fuel remaining
 
         //Checking for negative values :)
-        myHybrid.drive(-100); // Drive -100 km
-        myHybrid.addFuel(-20); // Tank -20 litres
-        System.out.println(myHybrid.getFuelLevel()); //Print fuel remaining
+        myHybrid.drive(-666); // Drive -100 km
+        myHybrid.addFuel(-13); // Tank -20 litres
+        myHybrid.getFuelLevel(); //Print fuel remaining
     }
 }
