@@ -16,7 +16,7 @@ class Car extends Vehicle {
             System.out.println("Cannot add more than " + fuelTankCap + " to a Car tank, you lost "
                     + (amountOfFuel+addedFuel-fuelTankCap)+
                     "L of fuel,\nbecause you already had " + amountOfFuel + "L of fuel in the tank, sorry! Watch out for the Fuel spill!");
-            this.amountOfFuel = 60;
+            this.amountOfFuel = fuelTankCap;
         } else {
             this.amountOfFuel = this.amountOfFuel+addedFuel;
             System.out.println("Added " + addedFuel+ "L of Fuel...");
