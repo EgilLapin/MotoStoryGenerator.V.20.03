@@ -10,9 +10,9 @@ public class Main {
         myHybrid.getFuelLevel(); //Print fuel remaining
 
         //add too much fuel
-        myHybrid.addFuel(63.362266666666673); // Tank extra 70 litres
+        myHybrid.addFuel(63.362266666666673); // Tank extra 63.362266666666673 litres
         myHybrid.getFuelLevel(); //Print fuel remaining
-        myHybrid.drive(200.300300300300300); // Try Drive 555 km
+        myHybrid.drive(200.300300300300300); // Try Drive 200 km
         myHybrid.getFuelLevel(); //Print fuel remaining
 
         //Checking for negative values :)
