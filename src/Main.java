@@ -1,4 +1,5 @@
 import Vehicles.Cars.Car;
+import Vehicles.Moto.KawasakiZX666R;
 import Vehicles.Moto.Motorcycle;
 import Vehicles.Vehicle;
 
@@ -6,7 +7,7 @@ public class Main {
 
     //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
-        System.out.println("/////////////////Vehicles.Cars.Car////////////////////");
+       /* System.out.println("/////////////////Vehicles.Cars.Car////////////////////");
         Vehicle myHybrid = new Car(6.66,1);
         myHybrid.getFuelLevel(); //Print fuel remaining
         myHybrid.addFuel(46.66); // Tank 46.66 litres
@@ -42,6 +43,18 @@ public class Main {
         myMotorcycle.getFuelLevel(); //Print fuel remaining
 
         myMotorcycle.drive(80); // Try Drive 80 km
-        myMotorcycle.getFuelLevel(); //Print fuel remaining
+        myMotorcycle.getFuelLevel(); //Print fuel remaining*/
+        System.out.println("/////////////////KAWA////////////////////");
+        KawasakiZX666R zx6r = new KawasakiZX666R(15,15);
+        zx6r.getFuelLevel();
+        zx6r.drive(100);
+        zx6r.getFuelLevel(); //Print fuel remaining
+        zx6r.addFuel(4);
+        zx6r.addFuel(20);
+        zx6r.getFuelLevel(); //Print fuel remaining
+        zx6r.drive(222);
+        zx6r.drive(-100);
+        zx6r.addFuel(-2.22);
+        zx6r.fullSend200(99.999f);
     }
 }

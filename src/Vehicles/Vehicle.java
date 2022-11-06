@@ -40,7 +40,7 @@ public abstract class Vehicle {
 
     // adding extra method as a bonus for safety :)
     protected void callPolice(){
-        System.out.println("Sensing tampering with the Vehicles.Vehicle, calling the police...");
+        System.out.println("Sensing tampering with the Vehicle, calling the police...");
       }
 
 

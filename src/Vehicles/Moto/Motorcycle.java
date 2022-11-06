@@ -16,7 +16,7 @@ public class Motorcycle extends Vehicle {
             callPolice();
         } else if (addedFuel > fuelTankCap) {
             System.out.println("Trying to add " + addedFuel+ "L of Fuel...");
-            System.out.println("Cannot add more than "+ fuelTankCap + "L to a Vehicles.Moto.Motorcycle tank, you lost "
+            System.out.println("Cannot add more than "+ fuelTankCap + "L to a Motorcycle tank, you lost "
                     + (amountOfFuel+addedFuel-fuelTankCap)+
                     "L of fuel,\nbecause you already had " + amountOfFuel + "L of fuel in the tank, sorry!");
             this.amountOfFuel = fuelTankCap;
