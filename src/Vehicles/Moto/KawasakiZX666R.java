@@ -663,7 +663,8 @@ public class KawasakiZX666R extends Motorcycle{
 
 
 
-    private String myASCIIArt = "'........................'.........',,,,,,,,,,,;,,,,;::::::cclooddxxkxdddxxxxxxxxxxxkkkxxxkkxxxxxxxkxxdddxkkkxxxxxxxxxxddddddxkxdollooooddddooooooooll\\n\n" +
+    private String myASCIIArt =
+            "'........................'.........',,,,,,,,,,,;,,,,;::::::cclooddxxkxdddxxxxxxxxxxxkkkxxxkkxxxxxxxkxxdddxkkkxxxxxxxxxxddddddxkxdollooooddddooooooooll\\n\n" +
             "'............................',,,,,,,;::c:::::::cc::clooolllloddxxxkkkxxxxxxxxxxxxkkkOOkkkxxxxxkkkkxxxddddxxxdddxxxxxddddddxxxxddoooooloddddoooodooood\\n\n" +
             ",,'....''''...''',,,,,,,,,,,,,::ccccclooddooooodddddddxxddooodxkkkkkkkkkkxxxxxkkkkkOOOOkxdddooddxxxxxxxxxdddddddxxxxxxxxxxxxkkxxxddoolooddxxxddddddoll\\n\n" +
             "xxddddxxxxxddddxxxxxxxxxxxxxdxxkkkkkkOOOO00O0000O0000000000000OOOOkkkkkkkxxxxxkkkkkkkkkxddoooodddxxxxxxddxxxxxddxxxxxxxxxxxxxxxdddddooddxxxdddoooollll\\n\n" +
@@ -717,7 +718,7 @@ public class KawasakiZX666R extends Motorcycle{
             "   +#+ +:+ +#+     +#+     +#+ +:+ +#+     +#+ +#++:++#++:           +#+      +#++:+   +#++:++#+  +#++:++#+  +#++:++#+  +#++:++#:    \n" +
             "  +#+  +#+#+#     +#+     +#+  +#+#+#     +#+ +#+     +#+          +#+      +#+  +#+  +#+    +#+ +#+    +#+ +#+    +#+ +#+    +#+    \n" +
             " #+#   #+#+#     #+#     #+#   #+#+# #+# #+# #+#     #+#         #+#      #+#    #+# #+#    #+# #+#    #+# #+#    #+# #+#    #+#     \n" +
-            "###    #### ########### ###    ####  #####  ###     ###        ######### ###    ###  ########   ########   ########  ###    ###    \n" +
+            "###    #### ########### ###    ####  #####  ###     ###        ######### ###    ###  ########   ########   ########  ###    ###      \n" +
             "\n \n" +
             "          :::    :::          :::    ::: \n" +
             "         :+:    :+:          :+:    :+:  \n" +
