@@ -1,8 +1,12 @@
+import Vehicles.Cars.Car;
+import Vehicles.Moto.Motorcycle;
+import Vehicles.Vehicle;
+
 public class Main {
 
     //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
-        System.out.println("/////////////////Car////////////////////");
+        System.out.println("/////////////////Vehicles.Cars.Car////////////////////");
         Vehicle myHybrid = new Car(6.66,1);
         myHybrid.getFuelLevel(); //Print fuel remaining
         myHybrid.addFuel(46.66); // Tank 46.66 litres

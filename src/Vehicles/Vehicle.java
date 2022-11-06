@@ -1,9 +1,11 @@
+package Vehicles;
+
 public abstract class Vehicle {
 
         // A car has a certain fuel efficiency (measured in km/litre)
         private double fuelEfficiency;
         // and a certain amount of fuel in the fuel tank.
-        double amountOfFuel;
+        public double amountOfFuel;
         // The efficiency is specified in the constructor,
         public Vehicle(double fuelEfficiency,double amountOfFuel) {
             this.fuelEfficiency = fuelEfficiency;
@@ -33,12 +35,12 @@ public abstract class Vehicle {
         System.out.println("Fuel level now at : " + this.amountOfFuel+"\nX-X-X-X-X-X-X-X-X-X-X-");
     }
 
-        // method to add fuel to Vehicle
-    abstract void addFuel(double addedFuel);
+        // method to add fuel to Vehicles.Vehicle
+    public abstract void addFuel(double addedFuel);
 
     // adding extra method as a bonus for safety :)
-    void callPolice(){
-        System.out.println("Sensing tampering with the Vehicle, calling the police...");
+    protected void callPolice(){
+        System.out.println("Sensing tampering with the Vehicles.Vehicle, calling the police...");
       }
 
 
