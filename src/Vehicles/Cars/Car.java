@@ -5,6 +5,13 @@ import Vehicles.Vehicle;
 // Implement a class Vehicles.Cars.Car with 60 fuelTankCap
 public class Car extends Vehicle {
 
+    /**
+     *Development of Cars Package discontinued due to lack of resources, sorry, someone please continue with it...
+     *
+     * @author  NINJA ZX666R
+     * @version 1.0
+     */
+
     public Car(double fuelEfficiency, double amountOfFuel) {
         super(fuelEfficiency,amountOfFuel);
     }

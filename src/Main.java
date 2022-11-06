@@ -5,6 +5,13 @@ import Vehicles.Vehicle;
 
 public class Main {
 
+    /**
+     * No unit tests, console prints will be enough for now...
+     *
+     * @author  NINJA ZX666R
+     * @version 1.1
+     */
+
     //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
         System.out.println("/////////////////Car////////////////////");
