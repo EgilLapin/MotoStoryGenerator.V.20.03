@@ -2,10 +2,10 @@ package Vehicles.Moto;
 
 public class KawasakiZX666R extends Motorcycle{
 
-    double minimumRecommendedFuel = 10;
+    private double minimumRecommendedFuel = 10;
     private float throttleAmount;
-    float total = 100;
-    float percent = (100 * throttleAmount) / total;
+    private float total = 100;
+    private float percent = (100 * throttleAmount) / total;
     private static final String fullSendConstant= "FULL SEND!";
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
