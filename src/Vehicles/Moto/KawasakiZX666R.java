@@ -709,7 +709,7 @@ public class KawasakiZX666R extends Motorcycle{
             "cccccccccccccccccccccccccccc:::::::::::::::::::::;;;;;;;;,,,,,,,,,,''''''''..........              ...',;;;;;::::cccccccllllllllllooolllllllllllllllll\n" +
             "cccclccccccccccccccccccccccccccccccccc:::::cc::::::::::::::::;;;;;;;;;;;;;;;,,,,,,,,'''............'''''',,,,,,;;;;;:::::::cccccccccccccccccclcccccccc\n" +
             "cccccccccccccccccc::::::::::::::::::::::::ccccccccccccccc::::::::::::::::::::::;;;;;;;;;;;;;,,,,,,,,,;;;;;;;;;;;;;;::::::::::::ccccccccccccccccccccccc\n" +
-            "lllllllcccccccccccccccccccccc::::::c:::::::ccccccccccccccccccccccccc:::::::::::::c:::::::::::::::::::::::::::::::::::::::::::::byebyewroomwroom200plus";
+            "lllllllcccccccccccccccccccccc::::::c::::::::::::::::::::::::::::::::`https://www.youtube.com/@NinjaZX666R`:::::::::::::::::::::byebyewroomwroom200plus";
 
     private String myASCIICheers = "\n \n" +
             "      ::::    ::: ::::::::::: ::::    ::: ::::::::::: :::            ::::::::: :::    :::  ::::::::   ::::::::   ::::::::  ::::::::: \n" +
