@@ -46,7 +46,7 @@ public class KawasakiZX666R extends Motorcycle{
             System.out.println(myASCIICheers);
             System.out.println(myASCIIArt);
         } else {
-            System.out.println("Please add more than " + minimumRecommendedFuel + "L!!!");
+            System.out.println("Please add more than " + minimumRecommendedFuel + "L to go FULL SEND!!!");
         }
 
     }

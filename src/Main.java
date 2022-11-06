@@ -50,11 +50,14 @@ public class Main {
         zx6r.drive(100);
         zx6r.getFuelLevel(); //Print fuel remaining
         zx6r.addFuel(4);
-        zx6r.addFuel(20);
+        zx6r.addFuel(1);
         zx6r.getFuelLevel(); //Print fuel remaining
         zx6r.drive(222);
         zx6r.drive(-100);
         zx6r.addFuel(-2.22);
+        zx6r.getFuelLevel(); //Print fuel remaining
+        zx6r.fullSend200(99.999f);
+        zx6r.addFuel(7.77);
         zx6r.fullSend200(99.999f);
     }
 }
