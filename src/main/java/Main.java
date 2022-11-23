@@ -49,7 +49,7 @@ public class Main {
 //
 //        myMotorcycle.drive(80); // Try Drive 80 km
 //        myMotorcycle.getFuelLevel(); //Print fuel remaining*/
-//        System.out.println("/////////////////KAWA////////////////////");
+//        System.out.println("/////////////////KAWA///////////////////");
         KawasakiZX666R zx6r = new KawasakiZX666R(15,15);
         zx6r.getFuelLevel();
         zx6r.drive(100);
