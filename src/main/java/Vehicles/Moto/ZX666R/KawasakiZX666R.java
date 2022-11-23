@@ -98,8 +98,12 @@ public class KawasakiZX666R extends Motorcycle {
        }
    }
 
+
     public void setThrottleAmount(float throttleAmount) {
         this.throttleAmount = throttleAmount;
+    }
+    public float getThrottleAmount() {
+        return throttleAmount;
     }
     public boolean getAnotherFullSend() {
         return anotherFullSend;
