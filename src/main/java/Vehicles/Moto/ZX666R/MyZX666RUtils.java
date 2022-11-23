@@ -18,10 +18,9 @@ public class MyZX666RUtils {
      * @Date 23.11.2022
      */
     static Boolean checkIfBikeOK() {
-        boolean isFuelEnough;
         boolean isMotoOk;
-        double RandomMotoCheck = Math.random();
-        if (RandomMotoCheck > 0.444) {
+        double randomMotoCheck = Math.random();
+        if (randomMotoCheck > 0.222) {
             isMotoOk = true;
             System.out.println("All seems good with " + zx666rString + "! Time for a ride...");
         } else {

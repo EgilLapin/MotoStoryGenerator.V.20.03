@@ -1,6 +1,8 @@
 package Vehicles.Moto.ZX666R;
 
 import Vehicles.Moto.Motorcycle;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -24,7 +26,6 @@ public class KawasakiZX666R extends Motorcycle {
     private float percent = (100 * throttleAmount) / total;
     private static final String fullSendConstant = "FULL SEND!";
     protected final static String zx666rString = "My beloved ZX666R";
-    public boolean shouldIRide;
     boolean alreadyDidAFullSend = false;
 
     private boolean anotherFullSend = false;
@@ -67,10 +68,12 @@ public class KawasakiZX666R extends Motorcycle {
             if (fuelLevelCheck && checkIfBikeOK()) {
             goFullSend200(maxWrist);
             } else {
-                if(!fuelLevelCheck){
+                if(!fuelLevelCheck && checkIfBikeOK()){
                     goToNeste();
+                    goFullSend200(maxWrist);
+                } else {
+                    investigateTheZX666RFurther();
                 }
-                investigateTheZX666RFurther();
             }
         } else {
             System.out.println("Meh... lets do something else instead");
@@ -80,6 +83,8 @@ public class KawasakiZX666R extends Motorcycle {
 
     private void goFullSend200(float maxWrist) {
         setThrottleAmount(maxWrist);
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R");
         System.out.println("Throttle set at " + throttleAmount + "%");
         System.out.println("Going " + fullSendConstant);
         getMyASCIISignatureFromFile();
@@ -118,8 +123,8 @@ public class KawasakiZX666R extends Motorcycle {
     public void maybeAnotherFullSend200Today() {
         if (alreadyDidAFullSend) {
             System.out.println("I want another ride... but should I?");
-            shouldIRide = new Random().nextBoolean();
-            if (shouldIRide == true) {
+            int shouldIRide = new Random().nextInt(10);
+            if (shouldIRide > 3) {
                 setAnotherFullSend(true);
                 System.out.println("Ehhh... lets " + fullSendConstant + " again");
             } else {
