@@ -1,4 +1,3 @@
-# Basic_Java_Practice
 ---WORK IN PROGRESS--- Remembering the good old plain Java///Just doing Random Java stuff
 
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
