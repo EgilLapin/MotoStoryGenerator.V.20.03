@@ -4,32 +4,29 @@ import Vehicles.Moto.Motorcycle;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Random;
 
 import static Vehicles.Moto.ZX666R.MyZX666RUtils.*;
+import static Vehicles.Moto.ZX666R.ZX666RNotOkUtils.callTheDevil;
 
 public class KawasakiZX666R extends Motorcycle {
 
     /**
      * @author NINJA ZX666R
-     * @version 1.2
-     * @Date 23.11.2022
+     * @version 1.3
+     * @Date 24.11.2022
      */
 
-    static double minimumRecommendedFuel = 10;
-    static double fuelTankCap = 15;
+    static final double minimumRecommendedFuel = 10;
+    static final double fuelTankCap = 15;
     private float throttleAmount;
-    private float total = 100;
-    private float percent = (100 * throttleAmount) / total;
     private static final String fullSendConstant = "FULL SEND!";
     protected final static String zx666rString = "My beloved ZX666R";
-    boolean alreadyDidAFullSend = false;
+    private boolean alreadyDidAFullSend = false;
     private boolean anotherFullSend = false;
     private String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
     private String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
+    private String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
@@ -57,11 +54,6 @@ public class KawasakiZX666R extends Motorcycle {
             System.out.println("Please add more than " + minimumRecommendedFuel + "L!!!");
         }
     }
-
-    public void callTheDevil() {
-        System.out.println("Sensing tampering with the ZX666R, calling the Devil...");
-    }
-
     public final void fullSend200(float maxWrist) {
         if ((!alreadyDidAFullSend) || getAnotherFullSend()) {
             System.out.println("Preparing for " + fullSendConstant + " Checking if Bike is OK...");
@@ -85,22 +77,13 @@ public class KawasakiZX666R extends Motorcycle {
     private void goFullSend200(float maxWrist) {
         setThrottleAmount(maxWrist);
         WebDriver driver = new ChromeDriver();
-        driver.get("https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R");
+        driver.get(linkToOpen);
         System.out.println("Throttle set at " + throttleAmount + "%");
         System.out.println("Going " + fullSendConstant);
         getMyASCIIArtFromFile(myASCIISignature);
         getMyASCIIArtFromFile(myASCIIArt);
     }
 
-    private static void getMyASCIIArtFromFile(String FileName) {
-        String myASCIIArtFromFile;
-        try {
-            myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(FileName)));
-        } catch (IOException e) {
-            myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Fund XXXXXXXXXXXXXXXXXXXX";
-        }
-        System.out.println(myASCIIArtFromFile);
-    }
 
     private void goToNeste() {
         System.out.println("Slowly riding to Neste to get some Futura 98");
@@ -111,7 +94,7 @@ public class KawasakiZX666R extends Motorcycle {
     public void maybeAnotherFullSend200Today() {
         if (alreadyDidAFullSend) {
             System.out.println("I want another ride... but should I?");
-            int shouldIRide = new Random().nextInt(10);
+            int shouldIRide = new Random().nextInt(9);
             if (shouldIRide > 3) {
                 setAnotherFullSend(true);
                 System.out.println("Ehhh... lets " + fullSendConstant + " again");
@@ -129,11 +112,11 @@ public class KawasakiZX666R extends Motorcycle {
         return throttleAmount;
     }
 
-    public boolean getAnotherFullSend() {
+    private boolean getAnotherFullSend() {
         return anotherFullSend;
     }
 
-    public void setAnotherFullSend(boolean anotherFullSend) {
+    private void setAnotherFullSend(boolean anotherFullSend) {
         this.anotherFullSend = anotherFullSend;
     }
 }

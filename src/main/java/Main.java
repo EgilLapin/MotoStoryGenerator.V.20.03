@@ -6,11 +6,10 @@ public class Main {
      * No unit tests, console prints will be enough for now...
      *
      * @author  NINJA ZX666R
-     * @version 1.2
-     * @Date 23.11.2022
+     * @version 1.3
+     * @Date 24.11.2022
      */
 
-    //return the current fuel level, and addFuel, to tank up.
     public static void main(String[] args) {
 //        System.out.println("/////////////////Car////////////////////");
 //        Vehicle myHybrid = new Car(6.66,1);

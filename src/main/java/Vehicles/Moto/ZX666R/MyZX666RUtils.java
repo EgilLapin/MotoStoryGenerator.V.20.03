@@ -1,5 +1,8 @@
 package Vehicles.Moto.ZX666R;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Random;
 
 import static Vehicles.Moto.ZX666R.KawasakiZX666R.minimumRecommendedFuel;
@@ -14,10 +17,10 @@ public class MyZX666RUtils {
      * Util Methods for ZX666R
      *
      * @author  NINJA ZX666R
-     * @version 1.2
-     * @Date 23.11.2022
+     * @version 1.3
+     * @Date 24.11.2022
      */
-    static Boolean checkIfBikeOK() {
+    protected static Boolean checkIfBikeOK() {
         boolean isMotoOk;
         double randomMotoCheck = Math.random();
         if (randomMotoCheck > 0.222) {
@@ -30,7 +33,7 @@ public class MyZX666RUtils {
         return isMotoOk;
     }
 
-    static boolean checkFuelLevel() {
+    protected static boolean checkFuelLevel() {
         if (amountOfFuel>minimumRecommendedFuel) {
             System.out.println("Checking Fuel tank - seems heavy... should be good!");
             return true;
@@ -39,7 +42,7 @@ public class MyZX666RUtils {
         return false;
     }
 
-    static void investigateTheZX666RFurther() {
+    protected static void investigateTheZX666RFurther() {
         System.out.println("Beginning quick walk-around of " + zx666rString + "...");
         int randomIssueFromTheMotoGods = new Random().nextInt(8);
         System.out.println("Hmmm, what is the issue?");
@@ -78,4 +81,15 @@ public class MyZX666RUtils {
                     break;
             }
     }
+
+     static void getMyASCIIArtFromFile(String FileName) {
+        String myASCIIArtFromFile;
+        try {
+            myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(FileName)));
+        } catch (IOException e) {
+            myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Fund XXXXXXXXXXXXXXXXXXXX";
+        }
+        System.out.println(myASCIIArtFromFile);
+    }
+
 }
