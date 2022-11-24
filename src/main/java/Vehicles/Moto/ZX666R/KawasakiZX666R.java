@@ -27,8 +27,9 @@ public class KawasakiZX666R extends Motorcycle {
     private static final String fullSendConstant = "FULL SEND!";
     protected final static String zx666rString = "My beloved ZX666R";
     boolean alreadyDidAFullSend = false;
-
     private boolean anotherFullSend = false;
+    private String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
+    private String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
@@ -87,31 +88,18 @@ public class KawasakiZX666R extends Motorcycle {
         driver.get("https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R");
         System.out.println("Throttle set at " + throttleAmount + "%");
         System.out.println("Going " + fullSendConstant);
-        getMyASCIISignatureFromFile();
-        getMyASCIIArtFromFile();
+        getMyASCIIArtFromFile(myASCIISignature);
+        getMyASCIIArtFromFile(myASCIIArt);
     }
 
-    private static void getMyASCIIArtFromFile() {
-        String myASCIIArtFileName = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
+    private static void getMyASCIIArtFromFile(String FileName) {
         String myASCIIArtFromFile;
         try {
-            myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(myASCIIArtFileName)));
+            myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(FileName)));
         } catch (IOException e) {
             myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Fund XXXXXXXXXXXXXXXXXXXX";
         }
         System.out.println(myASCIIArtFromFile);
-    }
-
-
-    private static void getMyASCIISignatureFromFile() {
-        String myASCIISignatureFileName = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
-        String ASCIIFromFile;
-        try {
-            ASCIIFromFile = new String(Files.readAllBytes(Paths.get(myASCIISignatureFileName)));
-        } catch (IOException e) {
-            ASCIIFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Signature File Not Fund XXXXXXXXXXXXXXXXXXXX";
-        }
-        System.out.println(ASCIIFromFile);
     }
 
     private void goToNeste() {
@@ -132,7 +120,6 @@ public class KawasakiZX666R extends Motorcycle {
             }
         }
     }
-
 
     public void setThrottleAmount(float throttleAmount) {
         this.throttleAmount = throttleAmount;
