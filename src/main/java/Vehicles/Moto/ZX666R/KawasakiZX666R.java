@@ -20,7 +20,7 @@ public class KawasakiZX666R extends Motorcycle {
     static final double minimumRecommendedFuel = 10;
     static final double fuelTankCap = 15;
     private float throttleAmount;
-    private static final String fullSendConstant = "FULL SEND!";
+    volatile static String fullSendConstant = "FULL SEND!";
     protected final static String zx666rString = "My beloved ZX666R";
     private boolean alreadyDidAFullSend = false;
     private boolean anotherFullSend = false;
