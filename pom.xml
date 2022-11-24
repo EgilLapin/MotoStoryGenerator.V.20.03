@@ -4,9 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>groupId</groupId>
+    <groupId>Ninja.ZX666R</groupId>
     <artifactId>JavaPractice</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>Ninja.Practice-1.3-SNAPSHOT</version>
+    <name>Ninja ZX666R</name>
+    <url>https://github.com/EgilLapin/Basic_Java_Practice</url>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <sonar.organization>egillapin</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -30,15 +41,5 @@
             </plugin>
         </plugins>
     </build>
-
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-        <sonar.organization>egillapin</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-    </properties>
 
 </project>
