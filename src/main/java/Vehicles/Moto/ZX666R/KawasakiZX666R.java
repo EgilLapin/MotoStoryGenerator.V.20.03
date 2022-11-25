@@ -18,7 +18,7 @@ public class KawasakiZX666R extends Motorcycle {
      */
 
     static final double minimumRecommendedFuel = 10;
-    static final double fuelTankCap = 15;
+    static final double fuelTankCap = 17;
     private float throttleAmount;
     volatile static String fullSendConstant = "FULL SEND!";
     protected final static String zx666rString = "My beloved ZX666R";
