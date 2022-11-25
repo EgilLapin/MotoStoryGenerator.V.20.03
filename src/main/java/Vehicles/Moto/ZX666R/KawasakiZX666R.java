@@ -71,7 +71,6 @@ public class KawasakiZX666R extends Motorcycle {
         } else {
             System.out.println("Meh... lets do something else instead");
         }
-        alreadyDidAFullSend = true;
     }
 
     private void goFullSend200(float maxWrist) {
@@ -82,6 +81,7 @@ public class KawasakiZX666R extends Motorcycle {
         System.out.println("Going " + fullSendConstant);
         getMyASCIIArtFromFile(myASCIISignature);
         getMyASCIIArtFromFile(myASCIIArt);
+        alreadyDidAFullSend = true;
     }
 
 
