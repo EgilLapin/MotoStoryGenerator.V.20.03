@@ -41,16 +41,18 @@ public class ZX666RNotOkUtils {
     }
     ////////////////////More private Util Methods//////////
     private static void topSecretStuff(){
+        // TODO:Placeholder method, will decide on implementation later
         System.out.println("Doing T0P SECRET MOTO stuff");
     }
     private static void callingGrandpa(){
         System.out.println("Calling Grandpa.... Hope he is not busy");
-        int  isGrandpaBusy = new Random().nextInt(9);
+        int  isGrandpaBusy = new Random().nextInt(10);
         if(isGrandpaBusy > 6) {
             System.out.println("Grandpa is very busy... will sort this out later");
             callMotoSensei();
         } else {
             System.out.println("Grandpa says he is not busy");
+            // TODO:needs some kind of slowly riding to garage method
             doingFurtherResearchInGarage();
         }
     }

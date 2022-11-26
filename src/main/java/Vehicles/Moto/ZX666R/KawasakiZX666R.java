@@ -18,7 +18,7 @@ public class KawasakiZX666R extends Motorcycle {
     static final double fuelTankCap = 17;
     private float throttleAmount;
     private boolean alreadyDidAFullSend = false;
-    boolean anotherFullSend = false;
+    private boolean anotherFullSend = false;
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
@@ -29,7 +29,7 @@ public class KawasakiZX666R extends Motorcycle {
     public void addFuel(double addedFuel) {
         if (addedFuel < 0) {
             System.out.println("Please dont steal " + Math.abs(addedFuel) + "L of Fuel...");
-            callPolice();
+            callPolice(); // TODO: Not sure if this method really is needed here...
             callTheDevil();
         } else if (addedFuel > fuelTankCap) {
             System.out.println("Trying to add " + addedFuel + "L of Fuel...");
@@ -48,8 +48,8 @@ public class KawasakiZX666R extends Motorcycle {
     }
     public final void fullSend200(float maxWrist) {
         if ((!alreadyDidAFullSend) || getAnotherFullSend()) {
-            boolean bikeChecker = checkIfBikeOK();
             System.out.println("Preparing for " + fullSendConstant + " Checking if Bike is OK...");
+            boolean bikeChecker = checkIfBikeOK();
             boolean fuelLevelCheck = checkFuelLevel();;
             if (fuelLevelCheck && bikeChecker) {
             goFullSend200(maxWrist);
@@ -88,7 +88,7 @@ public class KawasakiZX666R extends Motorcycle {
     public void maybeAnotherFullSend200Today() {
         if (alreadyDidAFullSend) {
             System.out.println("I want another ride... but should I?");
-            int shouldIRide = new Random().nextInt(9);
+            int shouldIRide = new Random().nextInt(10);
             if (shouldIRide > 7) {
                 setAnotherFullSend(true);
                 System.out.println("Ehhh... lets " + fullSendConstant + " again");

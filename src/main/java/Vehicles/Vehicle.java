@@ -12,8 +12,8 @@ public abstract class Vehicle {
             this.amountOfFuel = amountOfFuel;
         }
 
-    // Supply a method drive that simulates driving the car for a certain distance,
-    public void drive(double distance) {
+    // Supply a method that simulates driving the car for a certain distance,
+    public void ride(double distance) {
         if (distance<0) {
             System.out.println("Stop messing with the Odometer... Driving " + distance + " KM`s is kind of not possible");
             callPolice();
@@ -32,10 +32,10 @@ public abstract class Vehicle {
 
     // and methods getFuelLevel,
     public void getFuelLevel(){
-        System.out.println("Fuel level now at : " + this.amountOfFuel+"\nX-X-X-X-X-X-X-X-X-X-X-");
+        System.out.println("Fuel level now at : " + this.amountOfFuel+"l");
     }
 
-        // method to add fuel to Vehicles.Vehicle
+        // method to add fuel to Vehicles
     public abstract void addFuel(double addedFuel);
 
     // adding extra method as a bonus for safety :)
