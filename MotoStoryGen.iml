@@ -85,7 +85,7 @@
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-manager:4.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-safari-driver:4.6.0" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-support:4.6.0" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:1.6.4" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-simple:2.0.4" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:2.0.4" level="project" />
   </component>
 </module>
