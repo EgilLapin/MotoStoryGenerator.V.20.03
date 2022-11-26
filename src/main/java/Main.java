@@ -11,7 +11,7 @@ public class Main {
      */
 
     public static void main(String[] args) {
-//        System.out.println("/////////////////Car////////////////////");
+//        System.out.println("/////////////////Car///////////////////");
 //        Vehicle myHybrid = new Car(6.66,1);
 //        myHybrid.getFuelLevel(); //Print fuel remaining
 //        myHybrid.addFuel(46.66); // Tank 46.66 litres

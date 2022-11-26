@@ -13,8 +13,8 @@ public class KawasakiZX666R extends Motorcycle {
 
     /**
      * @author NINJA ZX666R
-     * @version 1.3
-     * @Date 24.11.2022
+     * @version 1.4
+     * @Date 26.11.2022
      */
 
     static final double minimumRecommendedFuel = 10;
@@ -70,13 +70,13 @@ public class KawasakiZX666R extends Motorcycle {
             }
         } else {
             System.out.println("Meh... lets do something else instead");
+            WebDriver driver = new ChromeDriver();
+            driver.get(linkToOpen);
         }
     }
 
     private void goFullSend200(float maxWrist) {
         setThrottleAmount(maxWrist);
-        WebDriver driver = new ChromeDriver();
-        driver.get(linkToOpen);
         System.out.println("Throttle set at " + throttleAmount + "%");
         System.out.println("Going " + fullSendConstant);
         getMyASCIIArtFromFile(myASCIISignature);
