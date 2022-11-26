@@ -13,7 +13,7 @@ public abstract class Vehicle {
         }
 
     // Supply a method drive that simulates driving the car for a certain distance,
-    public void drive(double distance) {
+    public void ride(double distance) {
         if (distance<0) {
             System.out.println("Stop messing with the Odometer... Driving " + distance + " KM`s is kind of not possible");
             callPolice();

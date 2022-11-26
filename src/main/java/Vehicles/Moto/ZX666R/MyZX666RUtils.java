@@ -73,7 +73,7 @@ public class MyZX666RUtils {
                     break;
                 case 5:
                     System.out.println("Clutch cable seems loose");
-                    driver.get("https://googlethatforyou.com?q=how%20to%20adjust%20my%20clutch%20cable");
+                    driver.get("https://googlethatforyou.com?q=how%20to%20adjust%20zx6r%20clutch%20cable");
                     goToGrandpasGarage();
                     break;
                 case 6:
@@ -98,7 +98,7 @@ public class MyZX666RUtils {
         try {
             myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(FileName)));
         } catch (IOException e) {
-            myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Fund XXXXXXXXXXXXXXXXXXXX";
+            myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Found XXXXXXXXXXXXXXXXXXX\n" + e;
         }
         System.out.println(myASCIIArtFromFile);
     }

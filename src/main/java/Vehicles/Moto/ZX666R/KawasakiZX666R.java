@@ -95,7 +95,7 @@ public class KawasakiZX666R extends Motorcycle {
         if (alreadyDidAFullSend) {
             System.out.println("I want another ride... but should I?");
             int shouldIRide = new Random().nextInt(9);
-            if (shouldIRide > 3) {
+            if (shouldIRide > 7) {
                 setAnotherFullSend(true);
                 System.out.println("Ehhh... lets " + fullSendConstant + " again");
             } else {
