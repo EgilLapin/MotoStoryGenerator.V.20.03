@@ -18,7 +18,7 @@ public class KawasakiZX666R extends Motorcycle {
     static final double fuelTankCap = 17;
     private float throttleAmount;
     private boolean alreadyDidAFullSend = false;
-    private boolean anotherFullSend = false;
+    boolean anotherFullSend = false;
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
@@ -48,12 +48,13 @@ public class KawasakiZX666R extends Motorcycle {
     }
     public final void fullSend200(float maxWrist) {
         if ((!alreadyDidAFullSend) || getAnotherFullSend()) {
+            boolean bikeChecker = checkIfBikeOK();
             System.out.println("Preparing for " + fullSendConstant + " Checking if Bike is OK...");
             boolean fuelLevelCheck = checkFuelLevel();;
-            if (fuelLevelCheck && checkIfBikeOK()) {
+            if (fuelLevelCheck && bikeChecker) {
             goFullSend200(maxWrist);
             } else {
-                if(!fuelLevelCheck && checkIfBikeOK()){
+                if(!fuelLevelCheck && bikeChecker){
                     goToNeste();
                     goFullSend200(maxWrist);
                 } else {

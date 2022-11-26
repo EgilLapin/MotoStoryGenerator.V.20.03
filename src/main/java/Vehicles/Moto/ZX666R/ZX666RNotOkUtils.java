@@ -2,8 +2,7 @@ package Vehicles.Moto.ZX666R;
 
 import java.util.Random;
 
-import static Vehicles.Moto.ZX666R.MyZX666RUtils.investigateTheZX666RFurther;
-import static Vehicles.Moto.ZX666R.MyZX666RUtils.zx666rString;
+import static Vehicles.Moto.ZX666R.MyZX666RUtils.*;
 
 /**
  * Util Methods in case the ZX666R is not OK
@@ -19,12 +18,12 @@ public class ZX666RNotOkUtils {
         topSecretStuff();
     }
 
-    static void goToGrandpasGarage() {
+    static void initGoingToGrandpasGarage() {
         System.out.println("I wonder what is Grandpa doing Today...");
         callingGrandpa();
     }
 
-    static void doingTopSecretFurtherResearch() {
+    static void doingFurtherResearchInGarage() {
         topSecretStuff();
     }
 
@@ -49,11 +48,12 @@ public class ZX666RNotOkUtils {
         int  isGrandpaBusy = new Random().nextInt(9);
         if(isGrandpaBusy > 6) {
             System.out.println("Grandpa is very busy... will sort this out later");
-            investigateTheZX666RFurther();
+            callMotoSensei();
         } else {
             System.out.println("Grandpa says he is not busy");
-            topSecretStuff();
+            doingFurtherResearchInGarage();
         }
     }
+
 }
 

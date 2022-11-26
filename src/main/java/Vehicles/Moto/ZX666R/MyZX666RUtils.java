@@ -36,8 +36,9 @@ public class MyZX666RUtils {
     private static String serviceManualSearch = "https://googlethatforyou.com?q=ZX6R%202003%20service%20manual";
     private static String ArtFileError = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Found XXXXXXXXXXXXXXXXXXX\n";
 
-    protected static Boolean checkIfBikeOK() {
-        boolean isMotoOk;
+    private static boolean isMotoOk;
+
+    static Boolean checkIfBikeOK() {
         double randomMotoCheck = Math.random();
         if (randomMotoCheck > 0.222) {
             isMotoOk = true;
@@ -49,7 +50,7 @@ public class MyZX666RUtils {
         return isMotoOk;
     }
 
-    protected static boolean checkFuelLevel() {
+    static boolean checkFuelLevel() {
         if (amountOfFuel>minimumRecommendedFuel) {
             System.out.println("Checking Fuel tank - seems heavy... should be good!");
             return true;
@@ -58,7 +59,7 @@ public class MyZX666RUtils {
         return false;
     }
 
-    protected static void investigateTheZX666RFurther() {
+     static void investigateTheZX666RFurther() {
         System.out.println("Beginning quick walk-around of " + zx666rString + "...");
         int randomIssueFromTheMotoGods = new Random().nextInt(8);
         System.out.println("Hmmm, what is the issue?");
@@ -67,12 +68,12 @@ public class MyZX666RUtils {
                 case 1:
                     System.out.println("Looks like the headlight is not working");
                     driver.get(headLightNotWorkingSearch);
-                    goToGrandpasGarage();
+                    initGoingToGrandpasGarage();
                     break;
                 case 2:
                     System.out.println("Blinker wires disconnected");
                     driver.get(blinkerNotWorkingSearch);
-                    goToGrandpasGarage();
+                    initGoingToGrandpasGarage();
                     break;
                 case 3:
                     System.out.println("Tyre pressure seems off");
@@ -87,22 +88,22 @@ public class MyZX666RUtils {
                 case 5:
                     System.out.println("Clutch cable seems loose");
                     driver.get(clutchCableSearch);
-                    goToGrandpasGarage();
+                    initGoingToGrandpasGarage();
                     break;
                 case 6:
                     System.out.println("Something wrong with the brake feel");
                     driver.get(brakeIssueSearch);
-                    goToGrandpasGarage();
+                    initGoingToGrandpasGarage();
                     break;
                 case 7:
                     System.out.println("No idea whats wrong...");
                     driver.get(meditationMusic);
                     driver.get(serviceManualSearch);
-                    doingTopSecretFurtherResearch();
+                    initGoingToGrandpasGarage();
                     break;
                 case 0:
                     System.out.println(zx666rString + " randomly started working again... who knows why");
-                    goToGrandpasGarage();
+                    initGoingToGrandpasGarage();
                     break;
             }
     }
