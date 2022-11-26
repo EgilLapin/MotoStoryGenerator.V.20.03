@@ -13,13 +13,13 @@ public class Main {
     public static void main(String[] args) {
         KawasakiZX666R zx6r = new KawasakiZX666R(15,15);
         zx6r.getFuelLevel();
-        zx6r.ride(100);
+        zx6r.drive(100);
         zx6r.getFuelLevel(); //Print fuel remaining
         zx6r.addFuel(4);
         zx6r.addFuel(1);
         zx6r.getFuelLevel(); //Print fuel remaining
-        zx6r.ride(222);
-        zx6r.ride(-100);
+        zx6r.drive(222);
+        zx6r.drive(-100);
         zx6r.addFuel(-2.22);
         zx6r.getFuelLevel(); //Print fuel remaining
         zx6r.fullSend200(99.999f);

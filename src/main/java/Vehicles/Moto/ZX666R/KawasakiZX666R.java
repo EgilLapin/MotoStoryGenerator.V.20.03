@@ -8,23 +8,17 @@ import java.util.Random;
 
 import static Vehicles.Moto.ZX666R.MyZX666RUtils.*;
 import static Vehicles.Moto.ZX666R.ZX666RNotOkUtils.callTheDevil;
-
+/**
+ * @author NINJA ZX666R
+ * @version 1.4
+ * @Date 26.11.2022
+ */
 public class KawasakiZX666R extends Motorcycle {
-
-    /**
-     * @author NINJA ZX666R
-     * @version 1.4
-     * @Date 26.11.2022
-     */
-
     static final double minimumRecommendedFuel = 10;
     static final double fuelTankCap = 17;
     private float throttleAmount;
     private boolean alreadyDidAFullSend = false;
     private boolean anotherFullSend = false;
-
-
-
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {

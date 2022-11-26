@@ -34,6 +34,7 @@ public class MyZX666RUtils {
     private static String clutchCableSearch = "https://googlethatforyou.com?q=how%20to%20adjust%20zx6r%20clutch%20cable";
     private static String brakeIssueSearch = "https://googlethatforyou.com?q=ZX6R%202003%20front%20brake%20replacement";
     private static String serviceManualSearch = "https://googlethatforyou.com?q=ZX6R%202003%20service%20manual";
+    private static String ArtFileError = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Found XXXXXXXXXXXXXXXXXXX\n";
 
     protected static Boolean checkIfBikeOK() {
         boolean isMotoOk;
@@ -111,7 +112,7 @@ public class MyZX666RUtils {
         try {
             myASCIIArtFromFile = new String(Files.readAllBytes(Paths.get(FileName)));
         } catch (IOException e) {
-            myASCIIArtFromFile = "XXXXXXXXXXXXXXXXXXXX My ASCII Art File Not Found XXXXXXXXXXXXXXXXXXX\n" + e;
+            myASCIIArtFromFile = ArtFileError + e;
         }
         System.out.println(myASCIIArtFromFile);
     }
