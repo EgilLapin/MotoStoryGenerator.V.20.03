@@ -20,13 +20,11 @@ public class KawasakiZX666R extends Motorcycle {
     static final double minimumRecommendedFuel = 10;
     static final double fuelTankCap = 17;
     private float throttleAmount;
-    volatile static String fullSendConstant = "FULL SEND!";
-    protected final static String zx666rString = "My beloved ZX666R";
     private boolean alreadyDidAFullSend = false;
     private boolean anotherFullSend = false;
-    private String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
-    private String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
-    private String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
+
+
+
 
 
     public KawasakiZX666R(double fuelEfficiency, double amountOfFuel) {
@@ -71,6 +69,7 @@ public class KawasakiZX666R extends Motorcycle {
         } else {
             System.out.println("Meh... lets do something else instead");
             WebDriver driver = new ChromeDriver();
+            driver.get(meditationMusic);
             driver.get(linkToOpen);
         }
     }
@@ -119,4 +118,6 @@ public class KawasakiZX666R extends Motorcycle {
     private void setAnotherFullSend(boolean anotherFullSend) {
         this.anotherFullSend = anotherFullSend;
     }
+
 }
+

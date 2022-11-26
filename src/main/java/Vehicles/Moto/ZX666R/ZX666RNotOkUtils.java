@@ -1,8 +1,7 @@
 package Vehicles.Moto.ZX666R;
 
 import java.util.Random;
-
-import static Vehicles.Moto.ZX666R.KawasakiZX666R.zx666rString;
+import static Vehicles.Moto.ZX666R.MyZX666RUtils.zx666rString;
 
 public class ZX666RNotOkUtils {
 
@@ -10,8 +9,8 @@ public class ZX666RNotOkUtils {
      * Util Methods in case the ZX666R is not OK
      *
      * @author  NINJA ZX666R
-     * @version 1.3
-     * @Date 24.11.2022
+     * @version 1.4
+     * @Date 26.11.2022
      */
 
     static void callMotoSensei() {

@@ -9,20 +9,32 @@ import java.nio.file.Paths;
 import java.util.Random;
 
 import static Vehicles.Moto.ZX666R.KawasakiZX666R.minimumRecommendedFuel;
-import static Vehicles.Moto.ZX666R.KawasakiZX666R.zx666rString;
 import static Vehicles.Moto.ZX666R.ZX666RNotOkUtils.*;
 import static Vehicles.Vehicle.amountOfFuel;
 
-
+/**
+ * Util Methods for ZX666R
+ *
+ * @author  NINJA ZX666R
+ * @version 1.4
+ * @Date 26.11.2022
+ */
 public class MyZX666RUtils {
 
-    /**
-     * Util Methods for ZX666R
-     *
-     * @author  NINJA ZX666R
-     * @version 1.4
-     * @Date 26.11.2022
-     */
+     static String meditationMusic = "https://googlethatforyou.com?q=sith%20meditation%20music";
+     static String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
+    static String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
+    static String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
+    volatile static String fullSendConstant = "FULL SEND!";
+    static String zx666rString = "My beloved ZX666R";
+    private static String headLightNotWorkingSearch= "https://googlethatforyou.com?q=how%20to%20fix%20zx6r%202003%20headlight";
+    private static String blinkerNotWorkingSearch = "https://googlethatforyou.com?q=how%20to%20replace%20zx6r%202003%20blinker%20wires";
+    private static String nearestCircleKSearch = "https://googlethatforyou.com?q=nearest%20Circle%20K%20near%20me";
+    private static String engineSearch = "https://googlethatforyou.com?q=ZX6R%202003%20engine%20removal";
+    private static String clutchCableSearch = "https://googlethatforyou.com?q=how%20to%20adjust%20zx6r%20clutch%20cable";
+    private static String brakeIssueSearch = "https://googlethatforyou.com?q=ZX6R%202003%20front%20brake%20replacement";
+    private static String serviceManualSearch = "https://googlethatforyou.com?q=ZX6R%202003%20service%20manual";
+
     protected static Boolean checkIfBikeOK() {
         boolean isMotoOk;
         double randomMotoCheck = Math.random();
@@ -53,37 +65,38 @@ public class MyZX666RUtils {
             switch (randomIssueFromTheMotoGods) {
                 case 1:
                     System.out.println("Looks like the headlight is not working");
-                    driver.get("https://googlethatforyou.com?q=how%20to%20fix%20zx6r%202003%20headlight");
+                    driver.get(headLightNotWorkingSearch);
                     goToGrandpasGarage();
                     break;
                 case 2:
                     System.out.println("Blinker wires disconnected");
-                    driver.get("https://googlethatforyou.com?q=how%20to%20replace%20zx6r%202003%20blinker%20wires");
+                    driver.get(blinkerNotWorkingSearch);
                     goToGrandpasGarage();
                     break;
                 case 3:
                     System.out.println("Tyre pressure seems off");
-                    driver.get("https://googlethatforyou.com?q=nearest%20Circle%20K%20near%20me");
+                    driver.get(nearestCircleKSearch);
                     goToCircleK();
                     break;
                 case 4:
                     System.out.println("Engine does not start");
-                    driver.get("https://googlethatforyou.com?q=ZX6R%202003%20engine%20removal");
+                    driver.get(engineSearch);
                     callMotoSensei();
                     break;
                 case 5:
                     System.out.println("Clutch cable seems loose");
-                    driver.get("https://googlethatforyou.com?q=how%20to%20adjust%20zx6r%20clutch%20cable");
+                    driver.get(clutchCableSearch);
                     goToGrandpasGarage();
                     break;
                 case 6:
                     System.out.println("Something wrong with the brake feel");
-                    driver.get("https://googlethatforyou.com?q=ZX6R%202003%20front%20brake%20replacement");
+                    driver.get(brakeIssueSearch);
                     goToGrandpasGarage();
                     break;
                 case 7:
                     System.out.println("No idea whats wrong...");
-                    driver.get("https://googlethatforyou.com?q=ZX6R%202003%20service%20manual");
+                    driver.get(meditationMusic);
+                    driver.get(serviceManualSearch);
                     doingTopSecretFurtherResearch();
                     break;
                 case 0:
