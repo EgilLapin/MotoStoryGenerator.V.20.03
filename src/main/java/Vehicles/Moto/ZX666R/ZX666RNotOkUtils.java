@@ -1,6 +1,8 @@
 package Vehicles.Moto.ZX666R;
 
 import java.util.Random;
+
+import static Vehicles.Moto.ZX666R.MyZX666RUtils.investigateTheZX666RFurther;
 import static Vehicles.Moto.ZX666R.MyZX666RUtils.zx666rString;
 
 /**
@@ -47,9 +49,11 @@ public class ZX666RNotOkUtils {
         int  isGrandpaBusy = new Random().nextInt(9);
         if(isGrandpaBusy > 6) {
             System.out.println("Grandpa is very busy... will sort this out later");
+            investigateTheZX666RFurther();
         } else {
             System.out.println("Grandpa says he is not busy");
             topSecretStuff();
         }
     }
 }
+

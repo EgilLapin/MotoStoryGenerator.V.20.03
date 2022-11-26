@@ -21,8 +21,8 @@ import static Vehicles.Vehicle.amountOfFuel;
  */
 public class MyZX666RUtils {
 
-     static String meditationMusic = "https://googlethatforyou.com?q=sith%20meditation%20music";
-     static String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
+    static String meditationMusic = "https://googlethatforyou.com?q=sith%20meditation%20music";
+    static String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
     static String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
     static String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
     volatile static String fullSendConstant = "FULL SEND!";
