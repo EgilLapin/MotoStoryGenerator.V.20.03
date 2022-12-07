@@ -25,7 +25,7 @@ public class MyZX666RUtils {
     static String linkToOpen = "https://en.wikipedia.org/wiki/Kawasaki_Ninja_ZX-6R";
     static String myASCIIArt = "src/main/java/Vehicles/Moto/ZX666R/myASCIIArt.txt";
     static String myASCIISignature = "src/main/java/Vehicles/Moto/ZX666R/myASCIISignature.txt";
-    volatile static String fullSendConstant = "FULL SEND!";
+    volatile static String fullSendConstant = "FULL SEND!!!";
     static String zx666rString = "My beloved ZX666R";
     private static String headLightNotWorkingSearch= "https://googlethatforyou.com?q=how%20to%20fix%20zx6r%202003%20headlight";
     private static String blinkerNotWorkingSearch = "https://googlethatforyou.com?q=how%20to%20replace%20zx6r%202003%20blinker%20wires";
