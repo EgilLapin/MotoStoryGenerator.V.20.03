@@ -2,7 +2,7 @@ package Vehicles.Cars;
 
 import Vehicles.Vehicle;
 /**
- *Development of Cars Package discontinued due to lack of resources, sorry, someone please continue with it......
+ *Development of Cars Package discontinued due to lack of resources, sorry, someone please continue with it...
  *
  * @author  NINJA ZX666R
  * @version 1.0
