@@ -5,8 +5,9 @@ public abstract class Vehicle {
         // A car has a certain fuel efficiency (measured in km/litre)
         private double fuelEfficiency;
         // and a certain amount of fuel in the fuel tank.
+
         public static double amountOfFuel;
-        // The efficiency is specified in the constructor,
+
         public Vehicle(double fuelEfficiency,double amountOfFuel) {
             this.fuelEfficiency = fuelEfficiency;
             this.amountOfFuel = amountOfFuel;

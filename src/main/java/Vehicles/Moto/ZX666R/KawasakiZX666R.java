@@ -65,7 +65,8 @@ public class KawasakiZX666R extends Motorcycle {
             System.out.println("Meh... lets do something else instead");
             WebDriver driver = new ChromeDriver();
             driver.get(meditationMusic);
-            driver.get(linkToOpen);
+            WebDriver driver2 = new ChromeDriver();
+            driver2.get(linkToOpen);
         }
     }
 

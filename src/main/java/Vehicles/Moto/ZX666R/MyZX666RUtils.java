@@ -40,7 +40,7 @@ public class MyZX666RUtils {
 
     static Boolean checkIfBikeOK() {
         double randomMotoCheck = Math.random();
-        if (randomMotoCheck > 0.222) {
+        if (randomMotoCheck > 0.333) {
             isMotoOk = true;
             System.out.println("All seems good with " + zx666rString + "! Time for a ride...");
         } else {
