@@ -19,7 +19,7 @@ public class Car extends Vehicle {
     public void addFuel(double addedFuel) {
         double fuelTankCap = 60;
         if (addedFuel < 0 ) {
-            System.out.println("Please dont steal " + Math.abs(addedFuel) + "L Fuel...");
+            System.out.println("Please dont steal " + Math.abs(addedFuel) + "L Fuel.....");
             callPolice();
         }  else if (addedFuel > fuelTankCap) {
             System.out.println("Trying to add " + addedFuel+ "L of Fuel...");
