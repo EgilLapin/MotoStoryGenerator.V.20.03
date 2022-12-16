@@ -128,4 +128,5 @@ https://www.contributor-covenant.org/faq. Translations are available at
 https://www.contributor-covenant.org/translations.
 
 <img width="266" alt="Emb_logo" src="https://user-images.githubusercontent.com/77918330/208166563-2c56ea91-8ffc-4ce6-b951-09a2e418cd61.png">
+https://youtu.be/PUf9_1jsCyY
 
