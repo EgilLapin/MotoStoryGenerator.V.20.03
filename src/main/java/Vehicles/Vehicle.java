@@ -26,7 +26,7 @@ public abstract class Vehicle {
                         "\nDrive postponed until more fuel is added ");
             } else {
                 this.amountOfFuel = this.amountOfFuel - neededFuel;
-                System.out.println("Driving " + distance + "KM`s...");
+                System.out.println("Riding " + distance + "KM`s...");
             }
         }
     }

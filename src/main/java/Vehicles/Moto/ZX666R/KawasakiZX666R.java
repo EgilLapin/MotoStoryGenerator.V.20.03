@@ -74,11 +74,15 @@ public class KawasakiZX666R extends Motorcycle {
         setThrottleAmount(maxWrist);
         System.out.println("Throttle set at " + throttleAmount + "%");
         System.out.println("Going " + fullSendConstant);
+        ride(getDistance());
         getMyASCIIArtFromFile(myASCIISignature);
         getMyASCIIArtFromFile(myASCIIArt);
         alreadyDidAFullSend = true;
     }
 
+    private static int getDistance() {
+        return new Random().nextInt(99);
+    }
 
     private void goToNeste() {
         System.out.println("Slowly riding to Neste to get some Futura 98");
