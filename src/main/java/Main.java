@@ -12,7 +12,7 @@ public class Main {
 
     public static void main(String[] args) {
         KawasakiZX666R zx6r = new KawasakiZX666R(15,15);
-        zx6r.getFuelLevel();
+  /*      zx6r.getFuelLevel();
         zx6r.ride(100);
         zx6r.getFuelLevel(); //Print fuel remaining
         zx6r.addFuel(4);
@@ -21,10 +21,11 @@ public class Main {
         zx6r.ride(222);
         zx6r.ride(-100);
         zx6r.addFuel(-2.22);
-        zx6r.getFuelLevel(); //Print fuel remaining
+        zx6r.getFuelLevel(); //Print fuel remaining*/
         zx6r.fullSend200(99.999f);
         System.out.println("Few hours later.....");
         zx6r.maybeAnotherFullSend200Today();
         zx6r.fullSend200(99.999f);
+        zx6r.getFuelLevel();
     }
 }
