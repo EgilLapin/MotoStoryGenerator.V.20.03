@@ -23,6 +23,7 @@ public class Main {
         zx6r.addFuel(-2.22);
         zx6r.getFuelLevel(); //Print fuel remaining*/
         zx6r.fullSend200(99.999f);
+        zx6r.getFuelLevel();
         System.out.println("Few hours later.....");
         zx6r.maybeAnotherFullSend200Today();
         zx6r.fullSend200(99.999f);
